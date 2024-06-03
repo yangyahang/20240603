@@ -58,6 +58,14 @@ function drawSkeleton() {
   // Draw all the tracked landmark points
   for (let i = 0; i < poses.length; i++) {
     pose = poses[i];
+    // text
+    partA = pose.keypoints[0];
+    if (partA.score > 0.1) {
+      push()
+      text("412737206",partA.x,partA.y+100)
+      text("楊雅涵",partA.x,partA.y+50)
+      pop()
+    }
     // eyes
     partA = pose.keypoints[1];
     partB = pose.keypoints[2];
