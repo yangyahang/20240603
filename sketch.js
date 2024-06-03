@@ -46,7 +46,9 @@ async function setup() {
 
 function draw() {
   image(video, 0, 0);
+  push()
   drawSkeleton();
+  pop()
   // flip horizontal
   cam = get();
   translate(cam.width, 0);
@@ -62,10 +64,7 @@ function drawSkeleton() {
     partA = pose.keypoints[0];
         partA = pose.keypoints[0];
     if (partA.score > 0.1) {
-      
-      scale(-1, 1)
       text("412737206楊雅涵",partA.x,partA.y-200)
-      
     }
     // eyes
     partA = pose.keypoints[1];
