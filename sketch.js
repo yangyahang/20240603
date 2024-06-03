@@ -62,17 +62,21 @@ function drawSkeleton() {
     partA = pose.keypoints[1];
     partB = pose.keypoints[2];
     if (partA.score > 0.1 && partB.score > 0.1) {
+      push()
       imageMode(CENTER)
       image(GIFImg,partA.x,partA.y,50,50)
       image(GIFImg,partB.x,partB.y,50,50)
+      pop()
     }
     // elbow
     partA = pose.keypoints[7];
     partB = pose.keypoints[8];
     if (partA.score > 0.1 && partB.score > 0.1) {
+      push()
       imageMode(CENTER)
       image(GIFImg,partA.x,partA.y,50,50)
       image(GIFImg,partB.x,partB.y,50,50)
+      pop()
     }
   }
 }
