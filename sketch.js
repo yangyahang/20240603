@@ -64,8 +64,7 @@ function drawSkeleton() {
     if (partA.score > 0.1) {
       push()
       scale(-1, 1)
-      text("412737206",partA.x,partA.y+100)
-      text("楊雅涵",partA.x,partA.y+100)
+      text("412737206楊雅涵",partA.x,partA.y-200)
       pop()
     }
     // eyes
