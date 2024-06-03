@@ -66,7 +66,6 @@ function drawSkeleton() {
       scale(-1, 1)
       text("412737206",partA.x,partA.y+100)
       text("楊雅涵",partA.x,partA.y+100)
-      textSize(100)
       pop()
     }
     // eyes
